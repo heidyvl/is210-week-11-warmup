@@ -5,10 +5,9 @@ import car
 
 
 class CustomCar(car.Car):
-    tires = None
+    tires = []
     def __init__(self, tires=None):
         if tires == None:
-            self.tires = []
             if len(self.tires) <= 4:
                 tire1 = CustomTire()
                 tire2 = CustomTire()
@@ -22,10 +21,10 @@ class CustomCar(car.Car):
 
 
 class CustomTire(car.Tire):
-    tires = None
-    def __init__(self,maximum_miles=500):
-        self.__maximum_miles = maximum_miles
-        car.Tire.__init__(self)
+    __maximum_miles = 500
+    
+    #def __init__(self):
+    #    car.Tire.__init__(self)
         
 if __name__ == '__main__':
     mycar = CustomCar()
