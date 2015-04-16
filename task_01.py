@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""Some Docstring"""
-
+"""Import produce and instatiate Objects using produce.Produce"""
 import produce
 
 TOMATO = produce.Produce()

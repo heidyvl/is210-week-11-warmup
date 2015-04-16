@@ -1,12 +1,30 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""Some Docstring"""
+"""Contains classes CustomCar and  CustomTire"""
 import car
-import pprint
+
 
 class CustomCar(car.Car):
-    
-    def __init__(self,color,tires=None):
+    """Object child of car.Car and places tires on car.
+
+    Attributes:
+        None        
+    """
+    def __init__(self,tires=None):
+        """
+        Args:
+            tires (None): The number of tires on the car.
+            
+        Attributes:
+            tires (list): Each particular tire on the car.
+
+        Examples:
+            >>> mycar = CustomCar()
+            >>> len(mycar.tires)
+            4
+            >>> isinstance(mycar.tires[0], CustomTire)
+            True
+        """
         self.tires = tires
         if self.tires == None:
             self.tires = []
@@ -18,15 +36,8 @@ class CustomCar(car.Car):
                 self.tires.append(tire)
         else:
             pass
-        car.Car.__init__(self, color)
+        car.Car.__init__(self)
 
 
 class CustomTire(car.Tire):
-
     __maximum_miles = 500
-    
-
-
-if __name__ == '__main__':
-    mycar = CustomCar('blue')
-    print len(mycar.tires)
