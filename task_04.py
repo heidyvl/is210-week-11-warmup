@@ -8,9 +8,9 @@ class CustomCar(car.Car):
     """Object child of car.Car and places tires on car.
 
     Attributes:
-        None        
+        None
     """
-    def __init__(self,tires=None):
+    def __init__(self, tires=None):
         """
         Args:
             tires (None): The number of tires on the car.
@@ -26,7 +26,7 @@ class CustomCar(car.Car):
             True
         """
         self.tires = tires
-        if self.tires == None:
+        if (self.tires) == None:
             self.tires = []
             tire = CustomTire()
             if len(self.tires) <= 4:
@@ -40,4 +40,8 @@ class CustomCar(car.Car):
 
 
 class CustomTire(car.Tire):
+    """Object is child of car.Tire and sets max miles.
+    Attributes:
+        __maximum_miles (int): Maximum allowed miles per tire.
+    """
     __maximum_miles = 500

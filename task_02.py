@@ -3,12 +3,12 @@
 """Contains class Snapshot, returns Unixtimestamp."""
 import time
 
+
 class Snapshot(object):
     """ Creates a Snapshot of time.time() and returns value.
     Attributes:
         None
     """
-    
     def __init__(self):
         """Takes Snapshot of the time and returns Unixtimestamp.
         Args:

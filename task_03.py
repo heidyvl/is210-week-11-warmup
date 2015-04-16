@@ -5,13 +5,13 @@ import produce
 
 
 class Apple(produce.Produce):
-    """Object child of produce.Produce and checks for duration. 
+    """Object child of produce.Produce and checks for duration.
     Attributes:
         duration (int): Duration of object after arrival.
     """
     duration = 5356800
 
-    def __init__(self):
+    def __init__(self, duration):
         """ Duration of Produce. 
         Args:
             duration (int): Duration of produce.
@@ -25,5 +25,5 @@ class Apple(produce.Produce):
             >>> print produce.Produce.duration
             604800
         """
-        self.duration = duration
-        Produce.__init__(self)
+        duration = self.duration
+        Produce.__init__(self, produce)
