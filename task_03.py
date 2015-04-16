@@ -11,8 +11,8 @@ class Apple(produce.Produce):
     """
     duration = 5356800
 
-    def __init__(self, duration):
-        """ Duration of Produce. 
+    def __init__(self):
+        """Duration of Produce.
         Args:
             duration (int): Duration of produce.
 
@@ -26,4 +26,4 @@ class Apple(produce.Produce):
             604800
         """
         duration = self.duration
-        Produce.__init__(self, produce)
+        produce.Produce.__init__(self, duration)

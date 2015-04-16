@@ -14,8 +14,8 @@ class CustomCar(car.Car):
         """
         Args:
             tires (None): The number of tires on the car.
-            
-        Attributes:
+
+        Returns:
             tires (list): Each particular tire on the car.
 
         Examples:
