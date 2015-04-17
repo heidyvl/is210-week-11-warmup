@@ -6,8 +6,8 @@ import produce
 
 
 class Apple(produce.Produce):
-    """Subclassing an existing Class"""
+    """produce.Produce is parent class for Apple
+    Attributes:
+        None
+    """
     duration = 5356800
-    def __init__(self, duration):
-        self.duration = duration
-        return duration
