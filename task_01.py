@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-""" Task_01"""
+""" Creating instances of class and passing value to constructors"""
 
 import produce
 
