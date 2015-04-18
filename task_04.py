@@ -6,10 +6,20 @@ import car
 
 
 class CustomCar(car.Car):
-    """Docstring"""
+    """A customized automobile"""
 
     def __init__(self, color='red', tires=None):
-        car.Car.__init__(self)
+        """Constructor for CustomCar() class.
+
+        Args:
+            color (string): Color of the car, defaults to 'red'.
+            tires (list): A list of CustomTire() objects. Defaults to None.
+
+        Attributes:
+            car.Car (class): Calls the Car() class.
+            tires (list): CustomTire objects to determine miles on Tires.
+        """
+        car.Car.__init__(self, color)
         self.tires = tires
         if self.tires is None:
             self.tires = []
@@ -18,6 +28,13 @@ class CustomCar(car.Car):
 
 
 class CustomTire(car.Tire):
-    """Docstring"""
+    """A customized rubber donut-shaped object
+
+    Args:
+       miles (int): Number of miles on the Tire.
+
+    Attributes:
+        miles (int): Number of miles on the Tire.
+    """
 
     __maximum_miles = 500
