@@ -31,7 +31,7 @@ class CustomCar(car.Car):
             >>>len(MYCAR.tire)
             4
 
-            >>>isinstance(mycar.tires[0], CustomTire)
+            >>>isinstance(MYCAR.tires[0], CustomTire)
             True
         """
 
