@@ -22,20 +22,6 @@ class CustomTire(car.Tire):
     def __init__(self, miles=0):
         car.Tire.__init__(self, miles=0)
 
-    def get_maxium_miles(self):
-        """Returns the maxiu_miles of tire.
-
-        Returns:
-            intger: 500.
-
-        Example:
-
-        >>> mytire = CustomTire()
-        >>> mytire.get_maxium_miles()
-        500
-        """
-        return self.__maxium_miles
-
 
 class CustomCar(car.Car):
     """ A CustomCar class.
